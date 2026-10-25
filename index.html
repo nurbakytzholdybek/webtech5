@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeamNG.drive</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/advanced.js" defer></script>
+</head>
+
+<body>
+
+<header id="main-header">
+
+    <img src="images/BeamNG_drive_logo.webp" alt="BeamNG_drive_logo" class="logo-w-bg">
+
+    <nav class="nav-menu" aria-label="Game navigation (use arrow keys)">
+        <a href="index.html">BeamNG.drive</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="cyberpunk.html">Cyberpunk 2077</a>
+        <a href="gta5.html">GTA V</a>
+    </nav>
+
+</header>
+
+
+<aside class="sidebar">
+
+    <h3>Memes corner</h3>
+
+    <img src="images/BeamND_drive_meme1.jpg" alt="BeamND.drive_meme" class="meme">
+    <img src="images/BeamND_drive_meme2.jpg" alt="BeamND.drive_meme" class="meme">
+    <img src="images/BeamND_drive_meme3.jpg" alt="BeamND.drive_meme" class="meme">
+
+</aside>
+
+
+<main>
+    <section class="card controls" aria-label="Display and sound settings">
+        <button id="theme-toggle" type="button" aria-pressed="false">Night mode</button>
+        <button id="sound-toggle" type="button" aria-pressed="false">Sound: off</button>
+        <button id="play-sound" type="button">Test sound</button>
+        <span id="sound-status" role="status"></span>
+    </section>
+
+
+    <section class="card">
+
+        <h2>BeamNG.drive</h2>
+
+        <img src="images/beamng.webp"
+             alt="BeamNG.drive game"
+             class="circle-image">
+
+        <p>
+            BeamNG.drive is a vehicle simulation game. It has realistic cars, maps and driving physics
+        </p>
+
+        <h3>Why I Like This Game</h3>
+
+        <ul>
+            <li>Realistic car physics</li>
+            <li>Many vehicles</li>
+            <li>Different maps</li>
+        </ul>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>My Favorite Activities</h2>
+
+        <ol>
+            <li>Driving cars</li>
+            <li>Exploring maps</li>
+            <li>Testing vehicles</li>
+        </ol>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Game Information</h2>
+
+        <table>
+
+            <tr>
+                <th>Game</th>
+                <th>Genre</th>
+                <th>Player</th>
+            </tr>
+
+            <tr>
+                <td>BeamNG.drive</td>
+                <td>Simulation</td>
+                <td>Nurbakyt</td>
+            </tr>
+
+            <tr>
+                <td>Minecraft</td>
+                <td>Sandbox</td>
+                <td>Nurbakyt</td>
+            </tr>
+
+            <tr>
+                <td>Cyberpunk 2077</td>
+                <td>Action RPG</td>
+                <td>Anuar</td>
+            </tr>
+
+            <tr>
+                <td>GTA V</td>
+                <td>Action</td>
+                <td>Anuar</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>About the Team Member</h2>
+
+        <h3>Nurbakyt</h3>
+
+        <p>
+            Nurbakyt likes video games. His favorite games are BeamNG.drive and Minecraft
+        </p>
+
+    </section>
+
+    <section class="card">
+
+    <h2>Change Background</h2>
+    <button id="change-background">Change Background</button>
+
+    </section>
+
+    <section class="card">
+
+    <h2>Current Date and Time</h2>
+    <p id="datetime"></p>
+
+    </section>
+    
+
+    <section class="card" id="rating-card">
+        <h2>Rate this game</h2>
+        <div class="rating-stars" role="group" aria-label="Choose a rating">
+            <button type="button" class="star" data-rating="1" aria-label="1 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="2" aria-label="2 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="3" aria-label="3 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="4" aria-label="4 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="5" aria-label="5 out of 5 stars" aria-pressed="false">★</button>
+        </div>
+        <p id="rating-message" role="status">Choose 1 to 5 stars.</p>
+    </section>
+
+    <section class="card">
+        <h2>Explore our games</h2>
+        <label for="genre-filter">Choose a genre</label>
+        <select id="genre-filter">
+            <option value="all">All games</option>
+            <option value="simulation">Simulation</option>
+            <option value="sandbox">Sandbox</option>
+            <option value="action">Action</option>
+        </select>
+        <p id="filter-message" role="status"></p>
+        <div id="game-results" class="results-grid"></div>
+    </section>
+    <section class="card">
+        <h2>Find your next game</h2>
+        <p>Choose your preferences to get a game recommendation.</p>
+        <p id="step-label" role="status">Step 1 of 3</p>
+        <form id="game-quiz">
+            <div class="quiz-step">
+                <label for="player-name">Your nickname</label>
+                <input id="player-name" maxlength="40" required autocomplete="nickname">
+            </div>
+            <div class="quiz-step" hidden>
+                <label for="player-genre">Your favorite genre</label>
+                <select id="player-genre">
+                    <option value="simulation">Simulation</option>
+                    <option value="sandbox">Sandbox</option>
+                    <option value="action">Action</option>
+                </select>
+            </div>
+            <div class="quiz-step" hidden><p id="quiz-summary"></p></div>
+            <p id="quiz-error" role="alert"></p>
+            <div class="controls">
+                <button id="quiz-back" type="button" disabled>Back</button>
+                <button id="quiz-next" type="button">Next</button>
+                <button id="quiz-submit" type="submit" hidden>Show recommendation</button>
+            </div>
+        </form>
+        <p id="quiz-result" role="status"></p>
+    </section>
+
+</main>
+
+<footer>
+
+    <p>Team Members: Nurbakyt and Anuar</p>
+
+</footer>
+
+</body>
+
+</html>

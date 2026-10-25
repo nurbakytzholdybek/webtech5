@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cyberpunk 2077</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/advanced.js" defer></script>
+</head>
+
+<body>
+
+<header id="main-header">
+
+    <img src="images/Cyberpunk_2077_logo.webp" alt="Cyberpunk_2077_logo" class="logo">
+
+    <nav class="nav-menu" aria-label="Game navigation (use arrow keys)">
+        <a href="index.html">BeamNG.drive</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="cyberpunk.html">Cyberpunk 2077</a>
+        <a href="gta5.html">GTA V</a>
+    </nav>
+
+</header>
+
+<aside class="sidebar">
+
+    <h3>Memes corner</h3>
+
+    <img src="images/Cyberpunk_2077_meme1.webp" alt="Cyberpunk_2077_meme" class="meme">
+    <img src="images/Cyberpunk_2077_meme2.webp" alt="Cyberpunk_2077_meme" class="meme">
+    <img src="images/Cyberpunk_2077_meme3.png" alt="Cyberpunk_2077_meme" class="meme">
+
+</aside>
+
+<main>
+    <section class="card controls" aria-label="Display and sound settings">
+        <button id="theme-toggle" type="button" aria-pressed="false">Night mode</button>
+        <button id="sound-toggle" type="button" aria-pressed="false">Sound: off</button>
+        <button id="play-sound" type="button">Test sound</button>
+        <span id="sound-status" role="status"></span>
+    </section>
+
+
+    <section class="card">
+
+        <h2>About Cyberpunk 2077</h2>
+
+        <img src="images/cyberpunk.webp"
+             alt="Cyberpunk 2077 game"
+             class="game-image">
+
+        <p>
+            Cyberpunk 2077 is an action role-playing game. The game takes place in Night City
+        </p>
+
+        <h3>Why I Like This Game</h3>
+
+        <ul>
+            <li>Open world</li>
+            <li>Interesting story</li>
+            <li>Beautiful graphics</li>
+            <li>Many cars</li>
+        </ul>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Favorite Activities</h2>
+
+        <ol>
+            <li>Explore Night City</li>
+            <li>Complete missions</li>
+            <li>Drive cars</li>
+            <li>Upgrade the character</li>
+        </ol>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>About the Team Member</h2>
+
+        <h3>Anuar</h3>
+
+        <p>
+            Anuar likes open-world games. His favorite games are Cyberpunk 2077 and GTA V
+        </p>
+
+    </section>
+
+    <section class="games-section">
+
+        <h2>Popular Games</h2>
+
+        <div class="card-container">
+
+            <div class="game-card">
+
+                <img src="images/beamng.webp"
+                     alt="BeamNG.drive">
+
+                <h3>BeamNG.drive</h3>
+
+                <p>
+                    A realistic vehicle simulation game with many cars and maps
+                </p>
+
+                <button>Read More</button>
+
+            </div>
+
+
+            <div class="game-card">
+
+                <img src="images/minecraft.webp"
+                     alt="Minecraft">
+
+                <h3>Minecraft</h3>
+
+                <p>
+                    A sandbox game where players can build and explore the world
+                </p>
+
+                <button>Read More</button>
+
+            </div>
+
+
+            <div class="game-card">
+
+                <img src="images/gta5.webp"
+                     alt="GTA V">
+
+                <h3>GTA V</h3>
+
+                <p>
+                    An open-world action game with missions and various activities
+                </p>
+
+                <button>Read More</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+    <h2>Subscription</h2>
+
+    <button id="open-popup">Subscribe</button>
+
+    <div id="popup">
+        <div id="popup-content">
+            <button id="close-popup">Close</button>
+            <form id="subscribe-form" novalidate>
+                <input type="email" id="subscribe-email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+                <p id="subscribe-message"></p>
+            </form>
+        </div>
+    </div>
+
+    </section>
+
+
+    <section class="card" id="rating-card">
+        <h2>Rate this game</h2>
+        <div class="rating-stars" role="group" aria-label="Choose a rating">
+            <button type="button" class="star" data-rating="1" aria-label="1 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="2" aria-label="2 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="3" aria-label="3 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="4" aria-label="4 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="5" aria-label="5 out of 5 stars" aria-pressed="false">★</button>
+        </div>
+        <p id="rating-message" role="status">Choose 1 to 5 stars.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Team Members: Nurbakyt and Anuar</p>
+</footer>
+
+</body>
+
+</html>

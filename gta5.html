@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GTA V</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/advanced.js" defer></script>
+</head>
+
+<body>
+
+<header id="main-header">
+
+    <img src="images/GTA5_logo.png" alt="GTA5_logo" class="logo-gta">
+
+    <nav class="nav-menu" aria-label="Game navigation (use arrow keys)">
+        <a href="index.html">BeamNG.drive</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="cyberpunk.html">Cyberpunk 2077</a>
+        <a href="gta5.html">GTA V</a>
+    </nav>
+
+</header>
+
+<aside class="sidebar">
+
+    <h3>Memes corner</h3>
+
+    <p>Internet litteraly has NO good memes with GTA5 or it hid it somewhere real deep. So...</p>
+    <img src="images/GTA5_meme.jpg" alt="GTA5_meme" class="meme">
+
+</aside>
+
+<main>
+    <section class="card controls" aria-label="Display and sound settings">
+        <button id="theme-toggle" type="button" aria-pressed="false">Night mode</button>
+        <button id="sound-toggle" type="button" aria-pressed="false">Sound: off</button>
+        <button id="play-sound" type="button">Test sound</button>
+        <span id="sound-status" role="status"></span>
+    </section>
+
+
+    <section class="card">
+
+        <h2>About GTA V</h2>
+
+        <img src="images/gta5.webp"
+             alt="GTA V game"
+             class="game-image">
+
+        <p>
+            GTA V is an open-world action game. Players can explore Los Santos, drive cars and complete missions.
+        </p>
+
+        <h3>Main Features</h3>
+
+        <ul>
+            <li>Open world</li>
+            <li>Many cars</li>
+            <li>Story missions</li>
+            <li>Online mode</li>
+        </ul>
+
+    </section>
+
+    <section class="card">
+    <h2>Registration Form</h2>
+
+    <form id="registration-form" novalidate>
+        <input type="text" id="reg-name" placeholder="Name" required>
+        <input type="email" id="reg-email" placeholder="Email" required>
+        <input type="password" id="reg-password" placeholder="Password" required>
+        <input type="password" id="reg-confirm" placeholder="Confirm password" required>
+        <button type="submit">Register</button>
+        <p id="reg-message"></p>
+    </form>
+
+    </section>
+
+
+    <section class="card" id="rating-card">
+        <h2>Rate this game</h2>
+        <div class="rating-stars" role="group" aria-label="Choose a rating">
+            <button type="button" class="star" data-rating="1" aria-label="1 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="2" aria-label="2 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="3" aria-label="3 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="4" aria-label="4 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="5" aria-label="5 out of 5 stars" aria-pressed="false">★</button>
+        </div>
+        <p id="rating-message" role="status">Choose 1 to 5 stars.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Team Members: Nurbakyt and Anuar</p>
+</footer>
+
+</body>
+
+</html>    

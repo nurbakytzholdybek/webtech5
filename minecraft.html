@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minecraft</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/advanced.js" defer></script>
+</head>
+
+<body>
+
+<header id="main-header">
+
+    <img src="images/minecraft_logo.png" alt="Minecraft_logo" class="logo">
+
+    <nav class="nav-menu" aria-label="Game navigation (use arrow keys)">
+        <a href="index.html">BeamNG.drive</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="cyberpunk.html">Cyberpunk 2077</a>
+        <a href="gta5.html">GTA V</a>
+    </nav>
+
+</header>
+
+<aside class="sidebar">
+
+    <h3>Memes corner</h3>
+
+    <img src="images/Minecraft_meme1.webp" alt="Minecraft_meme" class="meme">
+    <img src="images/Minecraft_meme2.webp" alt="Minecraft_meme" class="meme">
+    <img src="images/Minecraft_meme3.webp" alt="Minecraft_meme" class="meme">
+
+</aside>
+
+<main>
+    <section class="card controls" aria-label="Display and sound settings">
+        <button id="theme-toggle" type="button" aria-pressed="false">Night mode</button>
+        <button id="sound-toggle" type="button" aria-pressed="false">Sound: off</button>
+        <button id="play-sound" type="button">Test sound</button>
+        <span id="sound-status" role="status"></span>
+    </section>
+
+
+    <section class="card">
+
+        <h2>About Minecraft</h2>
+
+        <img src="images/minecraft.webp"
+             alt="Minecraft game"
+             class="game-image">
+
+        <p>
+            Minecraft is a sandbox game. Players can build, explore and collect resources
+        </p>
+
+        <h3>Game Modes</h3>
+
+        <ul>
+            <li>Survival</li>
+            <li>Creative</li>
+            <li>Adventure</li>
+        </ul>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>What I Like To Do</h2>
+
+        <ol>
+            <li>Build houses</li>
+            <li>Explore caves</li>
+            <li>Collect resources</li>
+            <li>Fight monsters</li>
+        </ol>
+
+    </section>
+
+    <section class="gallery-section">
+
+        <h2>Game Gallery</h2>
+
+        <div class="image-gallery">
+
+            <div class="gallery-item">
+                <img src="images/beamng.webp" alt="BeamNG.drive">
+                <div class="caption">BeamNG.drive</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/minecraft.webp" alt="Minecraft">
+                <div class="caption">Minecraft</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/cyberpunk.webp" alt="Cyberpunk 2077">
+                <div class="caption">Cyberpunk 2077</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gta5.webp" alt="GTA V">
+                <div class="caption">GTA V</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/forza.webp" alt="Forza">
+                <div class="caption">Forza</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/rdr2.webp" alt="RDR2">
+                <div class="caption">Red Dead Redemption 2</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/cs2.webp" alt="CS2">
+                <div class="caption">CS2</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/terraria.webp" alt="Terraria">
+                <div class="caption">Terraria</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/nfs.webp" alt="Need for Speed">
+                <div class="caption">Need for Speed</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+    <h2>FAQ</h2>
+
+    <div class="faq">
+        <button class="faq-question">What is this website?</button>
+        <div class="faq-answer">
+            <p>This website is about video games</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="faq-question">What games are featured?</button>
+        <div class="faq-answer">
+            <p>BeamNG.drive, Minecraft, Cyberpunk 2077 and GTA V, and other</p>
+        </div>
+    </div>
+
+    </section>
+
+
+    <section class="card" id="rating-card">
+        <h2>Rate this game</h2>
+        <div class="rating-stars" role="group" aria-label="Choose a rating">
+            <button type="button" class="star" data-rating="1" aria-label="1 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="2" aria-label="2 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="3" aria-label="3 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="4" aria-label="4 out of 5 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="5" aria-label="5 out of 5 stars" aria-pressed="false">★</button>
+        </div>
+        <p id="rating-message" role="status">Choose 1 to 5 stars.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Team Members: Nurbakyt and Anuar</p>
+</footer>
+
+</body>
+
+</html>
